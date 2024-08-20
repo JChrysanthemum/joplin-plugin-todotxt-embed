@@ -7,7 +7,7 @@
 
 # 2.Todo
 
-Use joplin [dialog]() other than dummy button [Y/N] to confirm clear operation. [todoTxtMdRule.js](src\todoTxtMdRule.js) line 143 with *headerHtml* and *tokens*
+Use joplin [dialog](https://joplinapp.org/api/references/plugin_api/classes/joplinviewsdialogs.html#showmessagebox) other than dummy button [Y/N] to confirm clear operation. [todoTxtMdRule.js](src\todoTxtMdRule.js) line 143 with *headerHtml* and *tokens*
 
 
 
