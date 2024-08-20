@@ -1,4 +1,6 @@
-# Joplin Todo.txt embedding
+# BUG in builtin, fixing
+
+# Joplin Todo.txt embedding 
 
 This repo is a fork from [hieuthi](https://github.com/hieuthi/joplin-plugin-metis) with my little customization.
 
