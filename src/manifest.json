@@ -1,12 +1,12 @@
 {
 	"manifest_version": 1,
-	"id": "com.hieuthi.joplin.metis",
+	"id": "com.JChrysanthemum.joplin.todotxtembed",
 	"app_min_version": "2.2",
-	"version": "0.1.5",
-	"name": "Metis",
-	"description": "A Simple Task Manager Plugin for Joplin based on Todo.txt Specification",
-	"author": "Hieu-Thi Luong",
-	"homepage_url": "https://github.com/hieuthi/joplin-plugin-metis",
-	"repository_url": "https://github.com/hieuthi/joplin-plugin-metis",
+	"version": "0.1.6",
+	"name": "todotxtembed",
+	"description": "Todo.txt Buildin Task Manager",
+	"author": "JChrysanthemum",
+	"homepage_url": "https://github.com/JChrysanthemum/joplin-plugin-todotxt-embed",
+	"repository_url": "https://github.com/JChrysanthemum/joplin-plugin-todotxt-embed",
 	"keywords": ["joplin-plugin","todo","todotxt","task management"]
 }

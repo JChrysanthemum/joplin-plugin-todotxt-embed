@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.1.6] - 2024-08-20
+### Added
+- Done job remove button
+
 ## [v0.1.5] - 2022-02-22
 ### Added
 - Render projects and contexts list
