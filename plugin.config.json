@@ -1,6 +1,3 @@
 {
-	"extraScripts": [
-		"todoTxtMdRule.js",
-		"todoTxtMdCtrl.js"
-	]
+	"extraScripts": []
 }

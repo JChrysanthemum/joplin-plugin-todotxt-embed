@@ -19,7 +19,7 @@ ul.todotxt li {
 	line-height: 1.2em;
 }
 ul.todotxt li.todotxt-header {
-	font-size: 10px;
+	font-size: 15px;
 }
 
 .todo-priority { 
@@ -78,6 +78,24 @@ ul.todotxt li.todotxt-header {
 	display: inline-block;
 	min-width: 3em;
 	text-decoration: none;
+}
+.todo-clear { 
+	display: inline-block;
+	margin-right: 0.5em;
+	min-width: 3em;
+	text-decoration: none;
+}
+.todo-clear-dummycheck {
+	margin-left: 0.5em;
+	display: inline-block;
+	min-width: 4em;
+	text-decoration: none;
+}
+.todo-clearcheckbox { 
+	margin-left: 0.3em;
+	margin-right: 0.5em;
+	display: inline-block;
+	user-select: none;
 }
 .todo-checkbox { 
 	margin-left: -1.9em;

@@ -62,6 +62,29 @@ function plugin(CodeMirror) {
 
 				this.setSelection(CodeMirror.Pos(lineIdx,start),CodeMirror.Pos(lineIdx,end+1));
 				break;
+			case 'clear':
+				var linesIdx = params[1].split(',');
+				// console.log(params)
+				console.log("CLEAR: ")
+				console.log(linesIdx)
+				console.log(linesIdx.length)
+
+				
+
+				for (var i = 0; i<linesIdx.length; i++){
+					var lineIdx = parseInt(linesIdx[i]);
+					console.log(lineIdx)
+					// console.log("?")
+					// console.log(linesIdx.length, i)
+
+					var line    = this.getLine(lineIdx);
+					var todo    = TodoTxt.parseLine(line);
+
+					this.replaceRange("",CodeMirror.Pos(lineIdx,0),CodeMirror.Pos(lineIdx,line.length));
+
+				}
+
+				break;
 			default:
 				break;
 

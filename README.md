@@ -1,3 +1,18 @@
+# Joplin Todo.txt embedding
+
+This repo is a fork from [hieuthi](https://github.com/hieuthi/joplin-plugin-metis) with my little custization.
+
+Original plugin named [Metis](https://github.com/hieuthi/joplin-plugin-metis). 
+
+Updates
+
+- Add [Clear done] and corresponding button on the header. It will remove all finished job from totxt.
+- Change the font size of status header.
+
+![screencap](https://raw.githubusercontent.com/JChrysanthemum/joplin-plugin-todotxt-embed/main/docs/clear.gif)
+
+hieuthi's intro
+_____
 # Metis
 
 Metis is an open-source Task Manager Plugin for Joplin based on Todo.txt specification.
@@ -62,3 +77,5 @@ I have developed and published an open-source javascript library for parsing tod
 
 ## License
 [MIT](https://raw.githubusercontent.com/hieuthi/joplin-plugin-metis/main/LICENSE)
+
+

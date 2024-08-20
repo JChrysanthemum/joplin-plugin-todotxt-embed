@@ -137,9 +137,45 @@ function todoTxtMd(state, startLine, endLine, silent) {
 			headerHtml += `<span class="todo-context">${key}</span><span class="todo-count">${countedContexts[key]}</span> `;
 		})
 
+		// Add the clear button
+		headerHtml += `<br><a class="todo-clear" href="#">[Clear done ?]</a>`
+
+		// Add clear confirm button v1
+		// Checkbox appears but no label or id
+		// headercheck = `<label class="todo-clearcheckbox"><input type="checkbox">N</label>`
+
+		// Add clear confirm button v2
+		// Checkbox not appears
+		// headercheck = tokens.concat([
+		// 						Object.assign(new state.Token('label_open', 'label', 1), 
+		// 							{attrs:[['class','todo-clearcheckbox']]}),
+		// 						Object.assign(new state.Token('checkbox_input', 'input', 0),
+		// 							{attrs: [['type','checkbox']]}),
+		// 						// Object.assign(new state.Token('span_open', 'span', 1), 
+		// 						// 	{attrs:[['class','todo-checkmark']]}),
+		// 						// new state.Token('span_close', 'span', -1),
+		// 						new state.Token('label_close', 'label', -1)
+		// 					]);
+
+		// Add clear confirm button v3
+		// Button to fix
+		headerHtml += `<a class="todo-clear-dummycheck" href="#">[N]</a>`
+
+
+
 		todoTokens.push(Object.assign(new state.Token('list_item_open', 'li', 1), {block: true, attrs: [["class","todotxt-header"]]}));
 		todoTokens.push(Object.assign(new state.Token('inline', '', 0), {content: headerHtml, children: []}));
+
+		// Add token for clear confirm button v1
+		// todoTokens.push(Object.assign(new state.Token('checkbox_input', 'input', 0),{attrs: [['type','checkbox']]}, {content: headercheck, children: []}));
+
+		// Add token for clear confirm button v2
+		// todoTokens = todoTokens.concat(headercheck);
+
 		todoTokens.push(Object.assign(new state.Token('list_item_open', 'li', -1), {block: true}));
+
+		Object.assign(new state.Token('checkbox_input', 'input', 0),
+								{attrs: [['type','checkbox']]})
 
 		// Render Todo items
 		const tasks = queryView.getList();
