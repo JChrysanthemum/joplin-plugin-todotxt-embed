@@ -80,7 +80,7 @@ function plugin(CodeMirror) {
 					var line    = this.getLine(lineIdx);
 					var todo    = TodoTxt.parseLine(line);
 
-					this.replaceRange("",CodeMirror.Pos(lineIdx,0),CodeMirror.Pos(lineIdx,line.length));
+					this.replaceRange("\b",CodeMirror.Pos(lineIdx,0),CodeMirror.Pos(lineIdx,line.length));
 
 				}
 

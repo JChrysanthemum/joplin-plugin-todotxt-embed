@@ -11,6 +11,9 @@ Updates
 
 ![screencap](https://raw.githubusercontent.com/JChrysanthemum/joplin-plugin-todotxt-embed/main/docs/clear.gif)
 
+**Why not commit to origin repo ?** : **Metis** is a great plugin to use todotxt in joplin. But it's hard to be found in plugin market search engie. So I rename it with `totxt` to make it to be found easier 
+
+_____
 hieuthi's intro
 _____
 # Metis
