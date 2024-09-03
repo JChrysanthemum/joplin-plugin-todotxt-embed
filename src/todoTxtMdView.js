@@ -46,14 +46,14 @@ function makeTodoViewActionable() {
 		}
 	}
 
-	console.log(done_idx)
+	// console.log(done_idx)
 	
 	const clearButton = document.getElementsByClassName('todotxt-header')[0].getElementsByClassName('todo-clear')[0]
 	// const clearButton = document.getElementsByClassName('todo-clear')[0];
 
 	const clear_checkbox = document.getElementsByClassName('todotxt-header')[0].getElementsByClassName('todo-clear-dummycheck')[0]
 
-	console.log("DEBUG",clear_checkbox)
+	// console.log("DEBUG",clear_checkbox)
 
 	clear_checkbox.onclick= function (){
 		if(clear_checkbox.innerHTML=="[N]"){

@@ -64,26 +64,42 @@ function plugin(CodeMirror) {
 				break;
 			case 'clear':
 				var linesIdx = params[1].split(',');
-				// console.log(params)
-				console.log("CLEAR: ")
-				console.log(linesIdx)
-				console.log(linesIdx.length)
 
-				
+				// for (var i = 0; i<linesIdx.length; i++){
+				// 	var lineIdx = parseInt(linesIdx[i]);
+				// 	console.log(lineIdx);
 
+				// 	var line    = this.getLine(lineIdx);
+				// 	var todo    = TodoTxt.parseLine(line);
+
+				// 	this.replaceRange("",CodeMirror.Pos(lineIdx,-1) ,CodeMirror.Pos(lineIdx,line.length));
+
+				// }
+
+				// console.log("CLEAR DEBUG");
+				// console.log(linesIdx);
+				// console.log(linesIdx.sort());
+
+				var linesIdxSorted = []
 				for (var i = 0; i<linesIdx.length; i++){
-					var lineIdx = parseInt(linesIdx[i]);
-					console.log(lineIdx)
-					// console.log("?")
-					// console.log(linesIdx.length, i)
+					linesIdxSorted.push(parseInt(linesIdx[i]));
+				}
+				linesIdxSorted = linesIdxSorted.sort(function(a, b){return a - b;});
+				// console.log(linesIdxSorted);
+
+
+				for (var i = linesIdxSorted.length - 1; i>=0; i--){
+
+					var lineIdx = parseInt(linesIdxSorted[i]);
 
 					var line    = this.getLine(lineIdx);
 					var todo    = TodoTxt.parseLine(line);
 
-					this.replaceRange("\b",CodeMirror.Pos(lineIdx,0),CodeMirror.Pos(lineIdx,line.length));
+					var lineBeforeIdx = lineIdx - 1;
+					var lineBefore   = this.getLine(lineBeforeIdx);
 
+					this.replaceRange("",CodeMirror.Pos(lineBeforeIdx,lineBefore.length) ,CodeMirror.Pos(lineIdx,line.length));
 				}
-
 				break;
 			default:
 				break;

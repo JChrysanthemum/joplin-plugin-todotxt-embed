@@ -1,4 +1,3 @@
-# BUG in builtin, fixing
 
 # Joplin Todo.txt embedding 
 
